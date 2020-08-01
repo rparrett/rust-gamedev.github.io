@@ -6300,11 +6300,14 @@ and a &lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-36&#x2F;#playe
 &lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-39&quot;&gt;#39&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Also, check out &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;Veloren&quot;&gt;&#x2F;r&#x2F;veloren subreddit&lt;&#x2F;a&gt;,
 it&#x27;s pretty active.&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;pf-sandbox&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rukai&#x2F;PF_Sandbox&quot;&gt;PF Sandbox&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#pf-sandbox&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;h3 id=&quot;canon-collision&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;canoncollision.com&quot;&gt;Canon Collision&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#canon-collision&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-003&#x2F;pf-sandbox.jpg&quot; alt=&quot;Exported models with textureas and skeletal animations&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rukai&#x2F;PF_Sandbox&quot;&gt;PF Sandbox&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;thisIsRukai&quot;&gt;@rukai&lt;&#x2F;a&gt; is a platform fighter sandbox featuring:
-in game Fighter and Stage Editor, replays, and TAS tools.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;canoncollision.com&quot;&gt;Canon Collision&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;thisIsRukai&quot;&gt;@rukai&lt;&#x2F;a&gt; is an Undertale + Homestuck
+fan-made platform fighter with powerful tools for modding.
+It was forked from another project of rukai&#x27;s
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rukai&#x2F;PF_Sandbox&quot;&gt;PF Sandbox&lt;&#x2F;a&gt; so he could focus on making
+a game rather then an engine.&lt;&#x2F;p&gt;
 &lt;p&gt;This month,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;thisIsRukai&#x2F;status&#x2F;1180477120113340417&quot;&gt;exporting and hot-reloading assets from blender&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;thisIsRukai&#x2F;status&#x2F;1182945899485335552&quot;&gt;freelook camera&lt;&#x2F;a&gt;,
