@@ -101,6 +101,13 @@
         </url>
     
         <url>
+            <loc>https://rust-gamedev.github.io/posts/newsletter-012/</loc>
+            
+                <lastmod>2020-08-06</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>https://rust-gamedev.github.io/posts/survey-01/</loc>
             
                 <lastmod>2020-02-06</lastmod>
