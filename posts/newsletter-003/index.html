@@ -34,8 +34,6 @@ Rust is a systems lan…">
         <link rel="manifest" href="https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;site.webmanifest">
     
         
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;rss.xml">
-        
     
         </head>    
 
@@ -438,20 +436,20 @@ and a <a href="https://reddit.com/r/rust/comments/dl4c8o/is_the_rust_compiler_re
 <li>
 <p>Try switching to <a href="https://lld.llvm.org">LLD linker</a>:</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#bf616a;">RUSTFLAGS</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">-C link-arg=-fuse-ld=lld</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#bf616a;">cargo</span><span style="color:#c0c5ce;"> run
+<code><span style="color:#bf616a;">RUSTFLAGS</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">-C link-arg=-fuse-ld=lld</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#bf616a;">cargo</span><span style="color:#c0c5ce;"> run
 </span><span style="color:#65737e;"># Alternatively, you can set `rustflags` in your `.cargo/config`
-</span></pre>
+</span></code></pre>
 <p>Depending on your project structure, OS, and toolchain
 this can potentially speed up the incremental compilation a few times.</p>
 </li>
 <li>
 <p>Also, try disabling debug information (if you don't need it):</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#65737e;"># in your `Cargo.toml`
+<code><span style="color:#65737e;"># in your `Cargo.toml`
 
 </span><span style="color:#c0c5ce;">[profile.dev]
 </span><span style="color:#bf616a;">debug </span><span style="color:#c0c5ce;">= </span><span style="color:#d08770;">0
-</span></pre></li>
+</span></code></pre></li>
 </ul>
 <blockquote>
 <p>Now the linking only takes around one second,

@@ -8,13 +8,12 @@
         <language>en</language>
         <atom:link href="https://rust-gamedev.github.io/rss.xml" rel="self" type="application/rss+xml"/>
         <lastBuildDate>Thu, 06 Aug 2020 00:00:00 +0000</lastBuildDate>
-        
-            <item>
-                <title>This Month in Rust GameDev #12 - July 2020</title>
-                <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-012/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-012/</guid>
-                <description>&lt;p&gt;Welcome to the twelfth issue of the Rust GameDev Workgroup’s
+        <item>
+            <title>This Month in Rust GameDev #12 - July 2020</title>
+            <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-012/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-012/</guid>
+            <description>&lt;p&gt;Welcome to the twelfth issue of the Rust GameDev Workgroup’s
 monthly newsletter.
 &lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -806,14 +805,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;i4uhta&#x2F;this_month_in_rust_gamedev_12_july_2020&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1291405227191611392&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #11 - June 2020</title>
-                <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-011/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-011/</guid>
-                <description>&lt;p&gt;Welcome to the eleventh issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #11 - June 2020</title>
+            <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-011/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-011/</guid>
+            <description>&lt;p&gt;Welcome to the eleventh issue of the Rust GameDev Workgroup’s
 monthly newsletter.
 &lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -1333,10 +1331,10 @@ increased incremental build time, and build artifacts size.
 nanoserde may be useful when the whole game has less than a minute
 clean build time and spending ~40s on serde is unreasonable.&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt; cargo tree
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt; cargo tree
 nanoserde v0.1.0 (&#x2F;..&#x2F;nanoserde)
 └── nanoserde-derive v0.1.0 (&#x2F;..&#x2F;nanoserde&#x2F;derive)
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Some benchmarks and tiled map deserializing example
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;not-fl3&#x2F;nanoserde-bench&quot;&gt;could be found here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;tetra-0-4&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;17cupsofcoffee&#x2F;status&#x2F;1275778769077317637&quot;&gt;Tetra 0.4&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#tetra-0-4&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
@@ -1492,14 +1490,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;hn0qso&#x2F;this_month_in_rust_gamedev_11_june_2020&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1280577098369949696&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #10 - May 2020</title>
-                <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-010/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-010/</guid>
-                <description>&lt;p&gt;Welcome to the tenth issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #10 - May 2020</title>
+            <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-010/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-010/</guid>
+            <description>&lt;p&gt;Welcome to the tenth issue of the Rust GameDev Workgroup’s
 monthly newsletter.
 &lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -2040,12 +2037,12 @@ Also, check out a new &amp;quot;Game of Life&amp;quot; demo &lt;a href=&quot;htt
 &lt;h3 id=&quot;beehive&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;toasteater&#x2F;beehive&quot;&gt;beehive&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#beehive&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;       yz +Y
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;       yz +Y
        __
    yx &#x2F;  \ xz +X
 -X zx \__&#x2F; xy
     -Y zy
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;toasteater&#x2F;beehive&quot;&gt;beehive&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;toast_dev&quot;&gt;@toast_dev&lt;&#x2F;a&gt; is a library that provides utilities and collections
 for working with 3D hexagonal maps.
 It&#x27;s based on &lt;a href=&quot;https:&#x2F;&#x2F;redblobgames.com&#x2F;grids&#x2F;hexagons&quot;&gt;Red Blob Games&#x27;s guide&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
@@ -2292,14 +2289,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;gz59mk&#x2F;this_month_in_rust_gamedev_10_may_2020&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1270064889432866818&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #9 - April 2020</title>
-                <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-009/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-009/</guid>
-                <description>&lt;p&gt;Welcome to the ninth issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #9 - April 2020</title>
+            <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-009/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-009/</guid>
+            <description>&lt;p&gt;Welcome to the ninth issue of the Rust GameDev Workgroup’s
 monthly newsletter.
 &lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -2670,7 +2666,7 @@ merged. Villagers have been getting a lot of love as well, making the world feel
 more alive.&lt;&#x2F;p&gt;
 &lt;p&gt;Here is the April changelog:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Complete rewrite of the combat system into a state machine
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Complete rewrite of the combat system into a state machine
 - Abilities like Dash and Triplestrike
 - Fireball explosions
 - Many new armors and weapons to find in chests
@@ -2689,7 +2685,7 @@ more alive.&lt;&#x2F;p&gt;
 - Added a Level of Detail (LoD) system for terrain sprites and entities
 - Villagers tools and clothing, cultists clothing
 - You can start the game by pressing &amp;quot;enter&amp;quot; from the character selection menu
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-009&#x2F;veloren2.png&quot; alt=&quot;Hanging out&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;^ &lt;em&gt;Early procedural building generation&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;You can read more about some specific topics from April:&lt;&#x2F;p&gt;
@@ -3124,14 +3120,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;genyuf&#x2F;this_month_in_rust_gamedev_9_april_2020&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1258080214070018048&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #8 - March 2020</title>
-                <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-008/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-008/</guid>
-                <description>&lt;p&gt;Welcome to the eighth issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #8 - March 2020</title>
+            <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-008/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-008/</guid>
+            <description>&lt;p&gt;Welcome to the eighth issue of the Rust GameDev Workgroup’s
 monthly newsletter.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -3375,7 +3370,7 @@ small outstanding issues have been worked on by a few diligent contributors.
 Networking is also being reworked from the ground up.&lt;&#x2F;p&gt;
 &lt;p&gt;Here is the March changelog:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Added sfx for wielding&#x2F;unwielding weapons
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Added sfx for wielding&#x2F;unwielding weapons
 - Fixed NPCs attacking the player forever after killing them
 - Added sfx for collecting, dropping and using inventory items
 - New attack animation
@@ -3386,7 +3381,7 @@ Networking is also being reworked from the ground up.&lt;&#x2F;p&gt;
 - Added player feedback when attempting to pickup an item with a full inventory
 - Added free look
 - Added Italian, Portuguese, and Turkish translations
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;veloren2.png&quot; alt=&quot;Hanging out&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;You can read more about some specific topics:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -3754,14 +3749,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;fx83ki&#x2F;this_month_in_rust_gamedev_8_march_2020&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1247906830212366336&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #7 - February 2020</title>
-                <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-007/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-007/</guid>
-                <description>&lt;p&gt;Welcome to the seventh issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #7 - February 2020</title>
+            <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-007/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-007/</guid>
+            <description>&lt;p&gt;Welcome to the seventh issue of the Rust GameDev Workgroup’s
 monthly newsletter.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -3896,7 +3890,7 @@ Finding a way for the server to efficiently persist player information
 is a large part of what is needed for The Content Update.&lt;&#x2F;p&gt;
 &lt;p&gt;Here is the February changelog:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Fixed NPCs attacking the player forever after killing them
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Fixed NPCs attacking the player forever after killing them
 - Extend run sfx to small animals to prevent sneak attacks by geese
 - Added sfx for wielding&#x2F;unwielding weapons
 - Added new orc hairstyles
@@ -3911,7 +3905,7 @@ is a large part of what is needed for The Content Update.&lt;&#x2F;p&gt;
 - Added rotating orientation marker to main-map
 - Brighter &#x2F; higher contrast main-map
 - Added music system
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=1ldHQfxCT24&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-007&#x2F;veloren3.gif&quot; alt=&quot;veloren development&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;^ &lt;em&gt;1 year of Veloren development. Click for the full video!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;You can read more about some specific topics:&lt;&#x2F;p&gt;
@@ -4344,14 +4338,14 @@ that has &lt;a href=&quot;https:&#x2F;&#x2F;superluminal.eu&#x2F;rust&quot;&gt;r
 a small crate that integrates with Superluminal profiler on Windows.&lt;&#x2F;p&gt;
 &lt;p&gt;Example usage:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;superluminal_perf::begin_event(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-event&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;);
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;superluminal_perf::begin_event(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-event&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;);
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;();
 superluminal_perf::end_event();
 
 superluminal_perf::begin_event(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;my-event2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;);
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;();
 superluminal_perf::end_event();
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;rust-on-rg-300-consoles&quot;&gt;Rust on &lt;a href=&quot;https:&#x2F;&#x2F;retrogame300.com&#x2F;products&#x2F;retro-game-300&quot;&gt;RG-300 Consoles&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rust-on-rg-300-consoles&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;rust-on-rg-300-consoles&quot;&gt;Rust on &lt;a href=&quot;https:&#x2F;&#x2F;retrogame300.com&#x2F;products&#x2F;retro-game-300&quot;&gt;RG-300 Consoles&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rust-on-rg-300-consoles&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=Rtf8ZEVALjQ&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-007&#x2F;rg-300.jpeg&quot; alt=&quot;Real-world demo of using Rust on RG-300&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&#x2F;comments&#x2F;fabgof&#x2F;wrote_a_rust_program_that_demonstrates_graphics&quot;&gt;@alexpdp7 shared their experience&lt;&#x2F;a&gt;
@@ -4631,14 +4625,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;fe03sb&#x2F;this_month_in_rust_gamedev_7_february_2020&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1235645370350227456&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #6 - January 2020</title>
-                <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-006/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-006/</guid>
-                <description>&lt;p&gt;Welcome to the sixth issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #6 - January 2020</title>
+            <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-006/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-006/</guid>
+            <description>&lt;p&gt;Welcome to the sixth issue of the Rust GameDev Workgroup’s
 monthly newsletter.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -4718,7 +4711,7 @@ It was also the first anniversary of This Week in Veloren!
 There has been a devblog each week since the end of January last year.
 Here are some of the big changes in this release:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Added initial region system implementation
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Added initial region system implementation
 - Added moon and clouds
 - Added proper SFX system
 - Added changelog
@@ -4733,7 +4726,7 @@ Here are some of the big changes in this release:&lt;&#x2F;p&gt;
 - Overhauled NPC AI
 - Pets now attack enemies and defend their owners
 - Added collars to tame wild animals
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;You can read more about some specific topics:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-49#how-to-effectively-write-a-proposal-for-the-game-design-team-by-silentium&quot;&gt;How to Effectively Write a Proposal for the Game Design Team&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -5003,17 +4996,17 @@ and get a sane FPS.&lt;&#x2F;p&gt;
 &lt;p&gt;To override the settings for all dependencies
 (but not any workspace member), use the &amp;quot;*&amp;quot; package name:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;[profile.dev.package.&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;]
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;[profile.dev.package.&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;]
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;opt-level &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;blockquote&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;blockquote&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;Do not optimize build-dependencies (like &lt;code&gt;syn&lt;&#x2F;code&gt;) to increase
 full release build time:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#c0c5ce;&quot;&gt;[profile.release.build-override]
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;[profile.release.build-override]
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;opt-level &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;em&gt;Discussions:
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&#x2F;comments&#x2F;ew9pis&#x2F;profile_overrides_are_stable_now&quot;&gt;&#x2F;r&#x2F;rust_gamedev&lt;&#x2F;a&gt;,
@@ -5139,7 +5132,7 @@ and keyframable curves;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;Animation sequences example:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#b48ead;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;keyframe::{keyframes, Keyframe, AnimationSequence};
+&lt;code&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;keyframe::{keyframes, Keyframe, AnimationSequence};
 
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;example&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; (value, time) or (value, time, function)
@@ -5154,7 +5147,7 @@ and keyframable curves;&lt;&#x2F;li&gt;
     assert_eq!(sequence.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;now&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;);
     assert_eq!(sequence.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;duration&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;);
 }
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;rltk-rs-v0-6-roguelike-tutorial&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;roguelikedev&#x2F;comments&#x2F;etiywv&#x2F;sharing_saturday_295&#x2F;ffi13dw&#x2F;&quot;&gt;rltk_rs v0.6&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;http:&#x2F;&#x2F;bfnightly.bracketproductions.com&#x2F;rustbook&quot;&gt;Roguelike Tutorial&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rltk-rs-v0-6-roguelike-tutorial&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;rltk-rs-v0-6-roguelike-tutorial&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;roguelikedev&#x2F;comments&#x2F;etiywv&#x2F;sharing_saturday_295&#x2F;ffi13dw&#x2F;&quot;&gt;rltk_rs v0.6&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;http:&#x2F;&#x2F;bfnightly.bracketproductions.com&#x2F;rustbook&quot;&gt;Roguelike Tutorial&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rltk-rs-v0-6-roguelike-tutorial&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-006&#x2F;rl-c70-pewpew.gif&quot; alt=&quot;Ranged attack demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bfnightly.bracketproductions.com&#x2F;rustbook&quot;&gt;The Roguelike Tutorial&lt;&#x2F;a&gt; continues to grow:
@@ -5394,14 +5387,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;f4r368&#x2F;this_month_in_rust_gamedev_6_january_2020&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1229047231916969987&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>Rust Game Development - Ecosystem Survey</title>
-                <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/survey-01/</link>
-                <guid>https://rust-gamedev.github.io/posts/survey-01/</guid>
-                <description>&lt;!-- markdownlint-disable single-title heading-increment no-blanks-blockquote --&gt;
+        </item>
+        <item>
+            <title>Rust Game Development - Ecosystem Survey</title>
+            <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/survey-01/</link>
+            <guid>https://rust-gamedev.github.io/posts/survey-01/</guid>
+            <description>&lt;!-- markdownlint-disable single-title heading-increment no-blanks-blockquote --&gt;
 &lt;!-- markdownlint-configure-file {&quot;line-length&quot;: {&quot;heading_line_length&quot;: 120}} --&gt;
 &lt;p&gt;In August last year, we conducted a survey for the Rust gamedev ecosystem.
 After an unfortunate delay, we can finally present the results.
@@ -5833,14 +5825,13 @@ Rest assured there will be more surveys.
 &lt;em&gt;Thanks so much to the survey respondents and all the people out there
 working tirelessly make Rust a first-tier language and ecosystem for game development.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #5 - December 2019</title>
-                <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-005/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-005/</guid>
-                <description>&lt;p&gt;Welcome to the fifth issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #5 - December 2019</title>
+            <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-005/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-005/</guid>
+            <description>&lt;p&gt;Welcome to the fifth issue of the Rust GameDev Workgroup’s
 monthly newsletter.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -6438,14 +6429,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;en7tki&#x2F;this_month_in_rust_gamedev_5_december_2019&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1215998150118461440&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #4 - November 2019</title>
-                <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-004/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-004/</guid>
-                <description>&lt;p&gt;Welcome to the fourth issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #4 - November 2019</title>
+            <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-004/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-004/</guid>
+            <description>&lt;p&gt;Welcome to the fourth issue of the Rust GameDev Workgroup’s
 monthly newsletter.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -6997,14 +6987,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;e7xdwf&#x2F;this_month_in_rust_gamedev_4_november_2019&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1203745439243223044&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #3 - October 2019</title>
-                <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-003/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-003/</guid>
-                <description>&lt;p&gt;Welcome to the third issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #3 - October 2019</title>
+            <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-003/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-003/</guid>
+            <description>&lt;p&gt;Welcome to the third issue of the Rust GameDev Workgroup’s
 monthly newsletter.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -7372,20 +7361,20 @@ and a &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;commen
 &lt;li&gt;
 &lt;p&gt;Try switching to &lt;a href=&quot;https:&#x2F;&#x2F;lld.llvm.org&quot;&gt;LLD linker&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#bf616a;&quot;&gt;RUSTFLAGS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;-C link-arg=-fuse-ld=lld&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; run
+&lt;code&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;RUSTFLAGS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;-C link-arg=-fuse-ld=lld&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; run
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Alternatively, you can set `rustflags` in your `.cargo&#x2F;config`
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Depending on your project structure, OS, and toolchain
 this can potentially speed up the incremental compilation a few times.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;Also, try disabling debug information (if you don&#x27;t need it):&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#65737e;&quot;&gt;# in your `Cargo.toml`
+&lt;code&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# in your `Cargo.toml`
 
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;[profile.dev]
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;debug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Now the linking only takes around one second,
@@ -7640,14 +7629,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;dt3uc9&#x2F;this_month_in_rust_gamedev_3_october_2019&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1192539926161702913&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #2 - September 2019</title>
-                <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-002/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-002/</guid>
-                <description>&lt;p&gt;Welcome to the second issue of the Rust GameDev Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #2 - September 2019</title>
+            <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-002/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-002/</guid>
+            <description>&lt;p&gt;Welcome to the second issue of the Rust GameDev Workgroup’s
 monthly newsletter.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -7849,7 +7837,7 @@ As such, the language and its syntax will keep growing at the rate
 in which hot reloading-supported semantics is added.
 Currently, the language looks like this:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
+&lt;code&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; sum = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;add&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(a, b);
 
     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Comments: Mun natively supports bool, float, and int
@@ -7861,7 +7849,7 @@ Currently, the language looks like this:&lt;&#x2F;p&gt;
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;add&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: int, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: int): int {
     a + b
 }
-&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;The source code of the project
 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mun-lang&#x2F;mun&quot;&gt;is available on GitHub&lt;&#x2F;a&gt;
 under the MIT or Apache licenses.&lt;&#x2F;p&gt;
@@ -8152,14 +8140,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;ddtbpm&#x2F;this_month_in_rust_gamedev_2_september_2019&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1180590459913035776&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>This Month in Rust GameDev #1 - August 2019</title>
-                <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/newsletter-001/</link>
-                <guid>https://rust-gamedev.github.io/posts/newsletter-001/</guid>
-                <description>&lt;p&gt;Welcome to the inaugural issue of the Rust Game Development Workgroup’s
+        </item>
+        <item>
+            <title>This Month in Rust GameDev #1 - August 2019</title>
+            <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/newsletter-001/</link>
+            <guid>https://rust-gamedev.github.io/posts/newsletter-001/</guid>
+            <description>&lt;p&gt;Welcome to the inaugural issue of the Rust Game Development Workgroup’s
 monthly (hopefully!) newsletter.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
 safety, concurrency, and speed.
@@ -8610,14 +8597,13 @@ or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&
 &lt;a href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;cyu3zg&#x2F;this_month_in_rust_gamedev_1_august_2019&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&#x2F;status&#x2F;1168614980721266695&quot;&gt;twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
-            <item>
-                <title>Introducing the Rust Game Development Working Group</title>
-                <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
-                <link>https://rust-gamedev.github.io/posts/introducing-the-rust-game-development-working-group/</link>
-                <guid>https://rust-gamedev.github.io/posts/introducing-the-rust-game-development-working-group/</guid>
-                <description>&lt;p&gt;Rust&#x27;s combination of low-level control, excellent performance
+        </item>
+        <item>
+            <title>Introducing the Rust Game Development Working Group</title>
+            <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+            <link>https://rust-gamedev.github.io/posts/introducing-the-rust-game-development-working-group/</link>
+            <guid>https://rust-gamedev.github.io/posts/introducing-the-rust-game-development-working-group/</guid>
+            <description>&lt;p&gt;Rust&#x27;s combination of low-level control, excellent performance
 and modern build tools makes it an exciting choice for game developers.
 The idea of a working group to support this burgeoning community has been proposed
 &lt;a href=&quot;https:&#x2F;&#x2F;internals.rust-lang.org&#x2F;t&#x2F;a-working-group-for-rust-game-development&#x2F;8240&#x2F;4&quot;&gt;many&lt;&#x2F;a&gt;
@@ -8670,7 +8656,6 @@ if you&#x27;d like to be notified when this goes live,
 please subscribe to our &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;feed.xml&quot;&gt;RSS feed&lt;&#x2F;a&gt;,
 or join us on &lt;a href=&quot;https:&#x2F;&#x2F;discord.gg&#x2F;j6QJsMd&quot;&gt;Discord&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
 </description>
-            </item>
-        
+        </item>
     </channel>
 </rss>

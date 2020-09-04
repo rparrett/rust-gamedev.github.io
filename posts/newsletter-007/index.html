@@ -34,8 +34,6 @@ Rust is a systems l…">
         <link rel="manifest" href="https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;site.webmanifest">
     
         
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;rss.xml">
-        
     
         </head>    
 
@@ -205,7 +203,7 @@ Finding a way for the server to efficiently persist player information
 is a large part of what is needed for The Content Update.</p>
 <p>Here is the February changelog:</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">- Fixed NPCs attacking the player forever after killing them
+<code><span style="color:#c0c5ce;">- Fixed NPCs attacking the player forever after killing them
 - Extend run sfx to small animals to prevent sneak attacks by geese
 - Added sfx for wielding/unwielding weapons
 - Added new orc hairstyles
@@ -220,7 +218,7 @@ is a large part of what is needed for The Content Update.</p>
 - Added rotating orientation marker to main-map
 - Brighter / higher contrast main-map
 - Added music system
-</span></pre>
+</span></code></pre>
 <p><a href="https://youtube.com/watch?v=1ldHQfxCT24"><img src="https://rust-gamedev.github.io/posts/newsletter-007/veloren3.gif" alt="veloren development" /></a></p>
 <p>^ <em>1 year of Veloren development. Click for the full video!</em></p>
 <p>You can read more about some specific topics:</p>
@@ -653,14 +651,14 @@ that has <a href="https://superluminal.eu/rust">recently got an official Rust su
 a small crate that integrates with Superluminal profiler on Windows.</p>
 <p>Example usage:</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">superluminal_perf::begin_event(&quot;</span><span style="color:#a3be8c;">my-event</span><span style="color:#c0c5ce;">&quot;);
+<code><span style="color:#c0c5ce;">superluminal_perf::begin_event(&quot;</span><span style="color:#a3be8c;">my-event</span><span style="color:#c0c5ce;">&quot;);
 </span><span style="color:#96b5b4;">calc</span><span style="color:#c0c5ce;">();
 superluminal_perf::end_event();
 
 superluminal_perf::begin_event(&quot;</span><span style="color:#a3be8c;">my-event2</span><span style="color:#c0c5ce;">&quot;);
 </span><span style="color:#96b5b4;">calc2</span><span style="color:#c0c5ce;">();
 superluminal_perf::end_event();
-</span></pre><h3 id="rust-on-rg-300-consoles">Rust on <a href="https://retrogame300.com/products/retro-game-300">RG-300 Consoles</a>&nbsp;<a class="anchor" href="#rust-on-rg-300-consoles" aria-hidden="true">#</a>
+</span></code></pre><h3 id="rust-on-rg-300-consoles">Rust on <a href="https://retrogame300.com/products/retro-game-300">RG-300 Consoles</a>&nbsp;<a class="anchor" href="#rust-on-rg-300-consoles" aria-hidden="true">#</a>
 </h3>
 <p><a href="https://youtube.com/watch?v=Rtf8ZEVALjQ"><img src="https://rust-gamedev.github.io/posts/newsletter-007/rg-300.jpeg" alt="Real-world demo of using Rust on RG-300" /></a></p>
 <p><a href="https://reddit.com/r/rust_gamedev/comments/fabgof/wrote_a_rust_program_that_demonstrates_graphics">@alexpdp7 shared their experience</a>

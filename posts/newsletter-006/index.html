@@ -34,8 +34,6 @@ Rust is a systems lan…">
         <link rel="manifest" href="https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;site.webmanifest">
     
         
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;rss.xml">
-        
     
         </head>    
 
@@ -150,7 +148,7 @@ It was also the first anniversary of This Week in Veloren!
 There has been a devblog each week since the end of January last year.
 Here are some of the big changes in this release:</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">- Added initial region system implementation
+<code><span style="color:#c0c5ce;">- Added initial region system implementation
 - Added moon and clouds
 - Added proper SFX system
 - Added changelog
@@ -165,7 +163,7 @@ Here are some of the big changes in this release:</p>
 - Overhauled NPC AI
 - Pets now attack enemies and defend their owners
 - Added collars to tame wild animals
-</span></pre>
+</span></code></pre>
 <p>You can read more about some specific topics:</p>
 <ul>
 <li><a href="https://veloren.net/devblog-49#how-to-effectively-write-a-proposal-for-the-game-design-team-by-silentium">How to Effectively Write a Proposal for the Game Design Team</a></li>
@@ -435,17 +433,17 @@ and get a sane FPS.</p>
 <p>To override the settings for all dependencies
 (but not any workspace member), use the &quot;*&quot; package name:</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">[profile.dev.package.&quot;</span><span style="color:#a3be8c;">*</span><span style="color:#c0c5ce;">&quot;]
+<code><span style="color:#c0c5ce;">[profile.dev.package.&quot;</span><span style="color:#a3be8c;">*</span><span style="color:#c0c5ce;">&quot;]
 </span><span style="color:#bf616a;">opt-level </span><span style="color:#c0c5ce;">= </span><span style="color:#d08770;">2
-</span></pre></blockquote>
+</span></code></pre></blockquote>
 </li>
 <li>
 <p>Do not optimize build-dependencies (like <code>syn</code>) to increase
 full release build time:</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">[profile.release.build-override]
+<code><span style="color:#c0c5ce;">[profile.release.build-override]
 </span><span style="color:#bf616a;">opt-level </span><span style="color:#c0c5ce;">= </span><span style="color:#d08770;">0
-</span></pre></li>
+</span></code></pre></li>
 </ul>
 <p><em>Discussions:
 <a href="https://reddit.com/r/rust_gamedev/comments/ew9pis/profile_overrides_are_stable_now">/r/rust_gamedev</a>,
@@ -571,7 +569,7 @@ and keyframable curves;</li>
 </ul>
 <p>Animation sequences example:</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#b48ead;">use </span><span style="color:#c0c5ce;">keyframe::{keyframes, Keyframe, AnimationSequence};
+<code><span style="color:#b48ead;">use </span><span style="color:#c0c5ce;">keyframe::{keyframes, Keyframe, AnimationSequence};
 
 </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">example</span><span style="color:#c0c5ce;">() {
     </span><span style="color:#65737e;">// (value, time) or (value, time, function)
@@ -586,7 +584,7 @@ and keyframable curves;</li>
     assert_eq!(sequence.</span><span style="color:#96b5b4;">now</span><span style="color:#c0c5ce;">(), </span><span style="color:#d08770;">2.0</span><span style="color:#c0c5ce;">);
     assert_eq!(sequence.</span><span style="color:#96b5b4;">duration</span><span style="color:#c0c5ce;">(), </span><span style="color:#d08770;">1.0</span><span style="color:#c0c5ce;">);
 }
-</span></pre><h3 id="rltk-rs-v0-6-roguelike-tutorial"><a href="https://reddit.com/r/roguelikedev/comments/etiywv/sharing_saturday_295/ffi13dw/">rltk_rs v0.6</a> &amp; <a href="http://bfnightly.bracketproductions.com/rustbook">Roguelike Tutorial</a>&nbsp;<a class="anchor" href="#rltk-rs-v0-6-roguelike-tutorial" aria-hidden="true">#</a>
+</span></code></pre><h3 id="rltk-rs-v0-6-roguelike-tutorial"><a href="https://reddit.com/r/roguelikedev/comments/etiywv/sharing_saturday_295/ffi13dw/">rltk_rs v0.6</a> &amp; <a href="http://bfnightly.bracketproductions.com/rustbook">Roguelike Tutorial</a>&nbsp;<a class="anchor" href="#rltk-rs-v0-6-roguelike-tutorial" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-006/rl-c70-pewpew.gif" alt="Ranged attack demo" /></p>
 <p><a href="http://bfnightly.bracketproductions.com/rustbook">The Roguelike Tutorial</a> continues to grow:
