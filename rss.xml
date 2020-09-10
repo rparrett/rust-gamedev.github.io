@@ -529,7 +529,7 @@ and mesh&#x2F;task shaders) as well as the existing ones.&lt;&#x2F;p&gt;
 &lt;p&gt;Traverse Research wanted to reduce their reliance on C and C++ unsafe
 libraries and at the same time they needed to support newer features that were
 slow to become available in the existing &lt;code&gt;spirv-reflect&lt;&#x2F;code&gt; library. The primary
-use-case for this library is in conjecture with the Rust wrapper around the
+use-case for this library is in conjunction with the Rust wrapper around the
 DirectX Shader Compiler (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;microsoft&#x2F;DirectXShaderCompiler&quot;&gt;dxc&lt;&#x2F;a&gt;), called &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Traverse-Research&#x2F;hassle-rs&quot;&gt;hassle-rs&lt;&#x2F;a&gt; that Traverse Research
 also built.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;gfx-rs-and-wgpu&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx&quot;&gt;gfx-rs&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;wgpu.rs&quot;&gt;wgpu&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#gfx-rs-and-wgpu&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
