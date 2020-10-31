@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Rust Game Development Working Group</title>
+      <title>Rust Game Development Working Group</title>
         <link>https://rust-gamedev.github.io/</link>
         <description>Stay up to date with the progress and recent developments in the Rust Game Development Working Group.</description>
         <generator>Zola</generator>
