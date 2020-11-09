@@ -668,6 +668,57 @@ This resulted in improved performance and memory usage
 when doing large edits and working with large maps:&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-015&#x2F;voxel-mapper.gif&quot; alt=&quot;Terraforming demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Join &lt;a href=&quot;https:&#x2F;&#x2F;discord.gg&#x2F;CnTNjwb&quot;&gt;Building Blocks&#x27;s Discord server&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;rust-gpu-v0-1&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EmbarkStudios&#x2F;rust-gpu&#x2F;releases&#x2F;tag&#x2F;v0.1&quot;&gt;Rust GPU v0.1&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rust-gpu-v0-1&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-015&#x2F;rustgpu.jpg&quot; alt=&quot;Rust GPU Sky&quot; &#x2F;&gt;
+&lt;em&gt;Sky example in Rust GPU&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EmbarkStudios&#x2F;rust-gpu&quot;&gt;Rust GPU&lt;&#x2F;a&gt; is a project backed by &lt;a href=&quot;https:&#x2F;&#x2F;www.embark-studios.com&#x2F;&quot;&gt;Embark Studios&lt;&#x2F;a&gt;
+to make Rust a first-class language and ecosystem for building GPU code.&lt;&#x2F;p&gt;
+&lt;p&gt;Although still in very early stages of development,
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EmbarkStudios&#x2F;rust-gpu&#x2F;releases&#x2F;tag&#x2F;v0.1&quot;&gt;Rust GPU released v0.1 in October&lt;&#x2F;a&gt;,
+and has already garnered over 2000 stars on Github.
+Currently, compiling and running very simple shaders
+works, and a significant portion of the core library also compiles. While things
+like if-statements and while-loops are working, many things aren&#x27;t implemented yet.
+For example, for-loops, iterators and match&#x2F;switch aren&#x27;t supported yet. That
+means that while being technically usable, Rust GPU is far from being
+production-ready.&lt;&#x2F;p&gt;
+&lt;p&gt;The motivation behind the project:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Historically in games, GPU programming has been done through writing either
+HLSL, or to a lesser extent GLSL. These are simple programming languages that
+have evolved along with rendering APIs over the years. However, as game engines
+have evolved, these languages have failed to provide mechanisms for dealing with
+large codebases, and have generally stayed behind the curve compared to other
+programming languages.&lt;&#x2F;p&gt;
+&lt;p&gt;In part this is because it&#x27;s a niche language for a niche market, and in part
+this has been because the industry as a whole has sunk quite a lot of time and
+effort into the status quo. While over-all better alternatives to both languages
+exist, none of them are in a place to replace HLSL or GLSL. Either because they
+are vendor locked, or because they don&#x27;t support the traditional graphics
+pipeline. Examples of this include CUDA and OpenCL. And while attempts have been
+made to create language in this space, none of them have gained any notable
+traction in the gamedev community.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;The code for the sky example above:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;spirv&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(entry = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;fragment&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;)]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;pub fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main_fs&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: Input&amp;lt;Vec4&amp;gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;output&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: Output&amp;lt;Vec4&amp;gt;) {
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; dir: Vec3 = input.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;load&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;truncate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;();
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; cs_pos = Vec4(dir.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, -dir.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;);
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; ws_pos = {
+        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; p = clip_to_world.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;mul_vec4&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(cs_pos);
+        p.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;truncate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() &#x2F; p.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;};
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; dir = (ws_pos - eye_pos).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;normalize&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;();
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; color = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;sky&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(dir, sun_pos); &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; evaluate Preetham sky model
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    output.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;store&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(color.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;extend&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;))
+}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;em&gt;Discussions:
+&lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;jg056t&#x2F;introducing_rustgpu_v01&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=24858172&quot;&gt;Hacker News&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;repi&#x2F;status&#x2F;1319274584915365888&quot;&gt;Twitter&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;gfx-rs&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx&quot;&gt;gfx-rs&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#gfx-rs&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;gfx-rs support for D3D has been improved. &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kvark&quot;&gt;@kvark&lt;&#x2F;a&gt; landed a few critical fixes
@@ -903,57 +954,6 @@ from one format to another.&lt;&#x2F;p&gt;
 &lt;p&gt;Documentation for building Proton is available on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ValveSoftware&#x2F;Proton&quot;&gt;Github&lt;&#x2F;a&gt;.
 Further documentation on Media Converter and its source code is available
 on the module&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ValveSoftware&#x2F;Proton&#x2F;tree&#x2F;proton_5.13&#x2F;media-converter&quot;&gt;repository&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;rust-gpu-v0-1&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EmbarkStudios&#x2F;rust-gpu&#x2F;releases&#x2F;tag&#x2F;v0.1&quot;&gt;Rust GPU v0.1&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rust-gpu-v0-1&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
-&lt;&#x2F;h3&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-015&#x2F;rustgpu.jpg&quot; alt=&quot;Rust GPU Sky&quot; &#x2F;&gt;
-&lt;em&gt;Sky example in Rust GPU&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EmbarkStudios&#x2F;rust-gpu&quot;&gt;Rust GPU&lt;&#x2F;a&gt; is a project backed by &lt;a href=&quot;https:&#x2F;&#x2F;www.embark-studios.com&#x2F;&quot;&gt;Embark Studios&lt;&#x2F;a&gt;
-to make Rust a first-class language and ecosystem for building GPU code.&lt;&#x2F;p&gt;
-&lt;p&gt;Although still in very early stages of development,
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EmbarkStudios&#x2F;rust-gpu&#x2F;releases&#x2F;tag&#x2F;v0.1&quot;&gt;Rust GPU released v0.1 in October&lt;&#x2F;a&gt;,
-and has already garnered over 2000 stars on Github.
-Currently, compiling and running very simple shaders
-works, and a significant portion of the core library also compiles. While things
-like if-statements and while-loops are working, many things aren&#x27;t implemented yet.
-For example, for-loops, iterators and match&#x2F;switch aren&#x27;t supported yet. That
-means that while being technically usable, Rust GPU is far from being
-production-ready.&lt;&#x2F;p&gt;
-&lt;p&gt;The motivation behind the project:&lt;&#x2F;p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Historically in games, GPU programming has been done through writing either
-HLSL, or to a lesser extent GLSL. These are simple programming languages that
-have evolved along with rendering APIs over the years. However, as game engines
-have evolved, these languages have failed to provide mechanisms for dealing with
-large codebases, and have generally stayed behind the curve compared to other
-programming languages.&lt;&#x2F;p&gt;
-&lt;p&gt;In part this is because it&#x27;s a niche language for a niche market, and in part
-this has been because the industry as a whole has sunk quite a lot of time and
-effort into the status quo. While over-all better alternatives to both languages
-exist, none of them are in a place to replace HLSL or GLSL. Either because they
-are vendor locked, or because they don&#x27;t support the traditional graphics
-pipeline. Examples of this include CUDA and OpenCL. And while attempts have been
-made to create language in this space, none of them have gained any notable
-traction in the gamedev community.&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;p&gt;The code for the sky example above:&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;spirv&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(entry = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;fragment&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;)]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;pub fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main_fs&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;input&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: Input&amp;lt;Vec4&amp;gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;output&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: Output&amp;lt;Vec4&amp;gt;) {
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; dir: Vec3 = input.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;load&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;truncate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;();
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; cs_pos = Vec4(dir.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, -dir.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;);
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; ws_pos = {
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; p = clip_to_world.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;mul_vec4&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(cs_pos);
-        p.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;truncate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() &#x2F; p.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;};
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; dir = (ws_pos - eye_pos).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;normalize&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;();
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; color = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;sky&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(dir, sun_pos); &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; evaluate Preetham sky model
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    output.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;store&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(color.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;extend&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;))
-}
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;&lt;em&gt;Discussions:
-&lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;jg056t&#x2F;introducing_rustgpu_v01&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;,
-&lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=24858172&quot;&gt;Hacker News&lt;&#x2F;a&gt;,
-&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;repi&#x2F;status&#x2F;1319274584915365888&quot;&gt;Twitter&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;popular-workgroup-issues-in-github&quot;&gt;Popular Workgroup Issues in Github&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#popular-workgroup-issues-in-github&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h2&gt;
 &lt;!-- Up to 10 links to interesting issues --&gt;

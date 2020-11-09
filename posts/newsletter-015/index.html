@@ -723,6 +723,57 @@ This resulted in improved performance and memory usage
 when doing large edits and working with large maps:</p>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-015/voxel-mapper.gif" alt="Terraforming demo" /></p>
 <p>Join <a href="https://discord.gg/CnTNjwb">Building Blocks's Discord server</a>.</p>
+<h3 id="rust-gpu-v0-1"><a href="https://github.com/EmbarkStudios/rust-gpu/releases/tag/v0.1">Rust GPU v0.1</a>&nbsp;<a class="anchor" href="#rust-gpu-v0-1" aria-hidden="true">#</a>
+</h3>
+<p><img src="https://rust-gamedev.github.io/posts/newsletter-015/rustgpu.jpg" alt="Rust GPU Sky" />
+<em>Sky example in Rust GPU</em></p>
+<p><a href="https://github.com/EmbarkStudios/rust-gpu">Rust GPU</a> is a project backed by <a href="https://www.embark-studios.com/">Embark Studios</a>
+to make Rust a first-class language and ecosystem for building GPU code.</p>
+<p>Although still in very early stages of development,
+<a href="https://github.com/EmbarkStudios/rust-gpu/releases/tag/v0.1">Rust GPU released v0.1 in October</a>,
+and has already garnered over 2000 stars on Github.
+Currently, compiling and running very simple shaders
+works, and a significant portion of the core library also compiles. While things
+like if-statements and while-loops are working, many things aren't implemented yet.
+For example, for-loops, iterators and match/switch aren't supported yet. That
+means that while being technically usable, Rust GPU is far from being
+production-ready.</p>
+<p>The motivation behind the project:</p>
+<blockquote>
+<p>Historically in games, GPU programming has been done through writing either
+HLSL, or to a lesser extent GLSL. These are simple programming languages that
+have evolved along with rendering APIs over the years. However, as game engines
+have evolved, these languages have failed to provide mechanisms for dealing with
+large codebases, and have generally stayed behind the curve compared to other
+programming languages.</p>
+<p>In part this is because it's a niche language for a niche market, and in part
+this has been because the industry as a whole has sunk quite a lot of time and
+effort into the status quo. While over-all better alternatives to both languages
+exist, none of them are in a place to replace HLSL or GLSL. Either because they
+are vendor locked, or because they don't support the traditional graphics
+pipeline. Examples of this include CUDA and OpenCL. And while attempts have been
+made to create language in this space, none of them have gained any notable
+traction in the gamedev community.</p>
+</blockquote>
+<p>The code for the sky example above:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">spirv</span><span style="color:#c0c5ce;">(entry = &quot;</span><span style="color:#a3be8c;">fragment</span><span style="color:#c0c5ce;">&quot;)]
+</span><span style="color:#b48ead;">pub fn </span><span style="color:#8fa1b3;">main_fs</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">input</span><span style="color:#c0c5ce;">: Input&lt;Vec4&gt;, </span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">output</span><span style="color:#c0c5ce;">: Output&lt;Vec4&gt;) {
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> dir: Vec3 = input.</span><span style="color:#96b5b4;">load</span><span style="color:#c0c5ce;">().</span><span style="color:#96b5b4;">truncate</span><span style="color:#c0c5ce;">();
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> cs_pos = Vec4(dir.</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">, -dir.</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">1.0</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">1.0</span><span style="color:#c0c5ce;">);
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> ws_pos = {
+        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> p = clip_to_world.</span><span style="color:#96b5b4;">mul_vec4</span><span style="color:#c0c5ce;">(cs_pos);
+        p.</span><span style="color:#96b5b4;">truncate</span><span style="color:#c0c5ce;">() / p.</span><span style="color:#d08770;">3
+    </span><span style="color:#c0c5ce;">};
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> dir = (ws_pos - eye_pos).</span><span style="color:#96b5b4;">normalize</span><span style="color:#c0c5ce;">();
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> color = </span><span style="color:#96b5b4;">sky</span><span style="color:#c0c5ce;">(dir, sun_pos); </span><span style="color:#65737e;">// evaluate Preetham sky model
+</span><span style="color:#c0c5ce;">    output.</span><span style="color:#96b5b4;">store</span><span style="color:#c0c5ce;">(color.</span><span style="color:#96b5b4;">extend</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0.0</span><span style="color:#c0c5ce;">))
+}
+</span></code></pre>
+<p><em>Discussions:
+<a href="https://reddit.com/r/rust/comments/jg056t/introducing_rustgpu_v01">/r/rust</a>,
+<a href="https://news.ycombinator.com/item?id=24858172">Hacker News</a>,
+<a href="https://twitter.com/repi/status/1319274584915365888">Twitter</a></em></p>
 <h3 id="gfx-rs"><a href="https://github.com/gfx-rs/gfx">gfx-rs</a>&nbsp;<a class="anchor" href="#gfx-rs" aria-hidden="true">#</a>
 </h3>
 <p>gfx-rs support for D3D has been improved. <a href="https://github.com/kvark">@kvark</a> landed a few critical fixes
@@ -958,57 +1009,6 @@ from one format to another.</p>
 <p>Documentation for building Proton is available on <a href="https://github.com/ValveSoftware/Proton">Github</a>.
 Further documentation on Media Converter and its source code is available
 on the module's <a href="https://github.com/ValveSoftware/Proton/tree/proton_5.13/media-converter">repository</a></p>
-<h3 id="rust-gpu-v0-1"><a href="https://github.com/EmbarkStudios/rust-gpu/releases/tag/v0.1">Rust GPU v0.1</a>&nbsp;<a class="anchor" href="#rust-gpu-v0-1" aria-hidden="true">#</a>
-</h3>
-<p><img src="https://rust-gamedev.github.io/posts/newsletter-015/rustgpu.jpg" alt="Rust GPU Sky" />
-<em>Sky example in Rust GPU</em></p>
-<p><a href="https://github.com/EmbarkStudios/rust-gpu">Rust GPU</a> is a project backed by <a href="https://www.embark-studios.com/">Embark Studios</a>
-to make Rust a first-class language and ecosystem for building GPU code.</p>
-<p>Although still in very early stages of development,
-<a href="https://github.com/EmbarkStudios/rust-gpu/releases/tag/v0.1">Rust GPU released v0.1 in October</a>,
-and has already garnered over 2000 stars on Github.
-Currently, compiling and running very simple shaders
-works, and a significant portion of the core library also compiles. While things
-like if-statements and while-loops are working, many things aren't implemented yet.
-For example, for-loops, iterators and match/switch aren't supported yet. That
-means that while being technically usable, Rust GPU is far from being
-production-ready.</p>
-<p>The motivation behind the project:</p>
-<blockquote>
-<p>Historically in games, GPU programming has been done through writing either
-HLSL, or to a lesser extent GLSL. These are simple programming languages that
-have evolved along with rendering APIs over the years. However, as game engines
-have evolved, these languages have failed to provide mechanisms for dealing with
-large codebases, and have generally stayed behind the curve compared to other
-programming languages.</p>
-<p>In part this is because it's a niche language for a niche market, and in part
-this has been because the industry as a whole has sunk quite a lot of time and
-effort into the status quo. While over-all better alternatives to both languages
-exist, none of them are in a place to replace HLSL or GLSL. Either because they
-are vendor locked, or because they don't support the traditional graphics
-pipeline. Examples of this include CUDA and OpenCL. And while attempts have been
-made to create language in this space, none of them have gained any notable
-traction in the gamedev community.</p>
-</blockquote>
-<p>The code for the sky example above:</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">spirv</span><span style="color:#c0c5ce;">(entry = &quot;</span><span style="color:#a3be8c;">fragment</span><span style="color:#c0c5ce;">&quot;)]
-</span><span style="color:#b48ead;">pub fn </span><span style="color:#8fa1b3;">main_fs</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">input</span><span style="color:#c0c5ce;">: Input&lt;Vec4&gt;, </span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">output</span><span style="color:#c0c5ce;">: Output&lt;Vec4&gt;) {
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> dir: Vec3 = input.</span><span style="color:#96b5b4;">load</span><span style="color:#c0c5ce;">().</span><span style="color:#96b5b4;">truncate</span><span style="color:#c0c5ce;">();
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> cs_pos = Vec4(dir.</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">, -dir.</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">1.0</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">1.0</span><span style="color:#c0c5ce;">);
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> ws_pos = {
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> p = clip_to_world.</span><span style="color:#96b5b4;">mul_vec4</span><span style="color:#c0c5ce;">(cs_pos);
-        p.</span><span style="color:#96b5b4;">truncate</span><span style="color:#c0c5ce;">() / p.</span><span style="color:#d08770;">3
-    </span><span style="color:#c0c5ce;">};
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> dir = (ws_pos - eye_pos).</span><span style="color:#96b5b4;">normalize</span><span style="color:#c0c5ce;">();
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> color = </span><span style="color:#96b5b4;">sky</span><span style="color:#c0c5ce;">(dir, sun_pos); </span><span style="color:#65737e;">// evaluate Preetham sky model
-</span><span style="color:#c0c5ce;">    output.</span><span style="color:#96b5b4;">store</span><span style="color:#c0c5ce;">(color.</span><span style="color:#96b5b4;">extend</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0.0</span><span style="color:#c0c5ce;">))
-}
-</span></code></pre>
-<p><em>Discussions:
-<a href="https://reddit.com/r/rust/comments/jg056t/introducing_rustgpu_v01">/r/rust</a>,
-<a href="https://news.ycombinator.com/item?id=24858172">Hacker News</a>,
-<a href="https://twitter.com/repi/status/1319274584915365888">Twitter</a></em></p>
 <h2 id="popular-workgroup-issues-in-github">Popular Workgroup Issues in Github&nbsp;<a class="anchor" href="#popular-workgroup-issues-in-github" aria-hidden="true">#</a>
 </h2>
 <!-- Up to 10 links to interesting issues -->
