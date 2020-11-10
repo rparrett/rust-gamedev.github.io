@@ -193,7 +193,7 @@ achieved through treating branch segments as Markov chains
 for other segment types&#x27; growth from one another)
 and simulating photosynthesis as an electrical circuit
 (enabling sugar storage in the form of root vegetables, for example).&lt;&#x2F;li&gt;
-&lt;li&gt;Concrete brick destruction mechanics was implemented.
+&lt;li&gt;Concrete brick destruction mechanics were implemented.
 Dust particles for the animation that appears upon breaking,
 as well as the debris, were also added to the game.&lt;&#x2F;li&gt;
 &lt;li&gt;Saving and loading are almost complete.&lt;&#x2F;li&gt;
