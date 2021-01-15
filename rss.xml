@@ -158,15 +158,15 @@ isn&#x27;t easy! The game uses real data from OpenStreetMap and local GIS source
 know where shops, single-family homes, and apartments are located. In places
 where zoning rules keep people separated from food, Santa will have a hard
 time.&lt;&#x2F;p&gt;
-&lt;p&gt;15-minute Santa was created by the &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-017&#x2F;abstreet&quot;&gt;A&#x2F;B Street&lt;&#x2F;a&gt; team as an experiment
+&lt;p&gt;15-minute Santa was created by the &lt;a href=&quot;https:&#x2F;&#x2F;abstreet.org&quot;&gt;A&#x2F;B Street&lt;&#x2F;a&gt; team as an experiment
 to see how quickly we could build a simple arcade game that gets people
-thinking about how their city is designed. &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-017&#x2F;santa-code&quot;&gt;The code&lt;&#x2F;a&gt; doesn&#x27;t make
+thinking about how their city is designed. &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dabreegster&#x2F;abstreet&#x2F;tree&#x2F;master&#x2F;santa&#x2F;src&#x2F;&quot;&gt;The code&lt;&#x2F;a&gt; doesn&#x27;t make
 use of an entity-component system or an existing engine, and animation and
 particle effects don&#x27;t use a custom shader. The game runs natively on Linux,
 Mac, and Windows, and on web browsers. There are instructions for modding the
 game and adding your own city!&lt;&#x2F;p&gt;
 &lt;p&gt;A&#x2F;B Street updates will return next month. In the meantime, please comment on
-the &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-017&#x2F;abstreet-roadmap&quot;&gt;2021 roadmap&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+the &lt;a href=&quot;https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1oV4mdtb0ve-wf0HqbEvR9IwXLIkTeDu8a3UnJxnr2F0&quot;&gt;2021 roadmap&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;egregoria&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Uriopass&#x2F;Egregoria&quot;&gt;Egregoria&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#egregoria&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-017&#x2F;egregoria.jpg&quot; alt=&quot;Egregoria farm and flour factory at night&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
