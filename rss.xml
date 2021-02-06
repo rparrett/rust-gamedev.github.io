@@ -62,7 +62,7 @@ If needed, a section can be split into subsections with a &quot;------&quot; del
 &lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-018&#x2F;podcast.jpeg&quot; alt=&quot;text logo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rustgamedev.com&#x2F;episodes&#x2F;interview-with-alex-ene&quot;&gt;The 5th podcast episode&lt;&#x2F;a&gt; is an interview with
-&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;_Alex_Ene_&quot;&gt;Alex Ene&lt;&#x2F;a&gt; creator of an upcoming dwarven simulation
+&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;_AlexEne_&quot;&gt;Alex Ene&lt;&#x2F;a&gt; creator of an upcoming dwarven simulation
 game, &lt;a href=&quot;https:&#x2F;&#x2F;dwarf.world&quot;&gt;Dwarf World&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In this week&#x27;s episode, Richard and Forest chat to Alex Ene,
@@ -225,7 +225,7 @@ This month&#x27;s updates include:&lt;&#x2F;p&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-018&#x2F;dwarfworld_lights.gif&quot; alt=&quot;Dwarf World&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dwarf.world&quot;&gt;Dwarf World&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;discord.gg&#x2F;vsRCxnY&quot;&gt;Discord&lt;&#x2F;a&gt;)
-by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;_Alex_Ene_&quot;&gt;Alex Ene&lt;&#x2F;a&gt; has added a couple of updates and improvements:&lt;&#x2F;p&gt;
+by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;_AlexEne_&quot;&gt;Alex Ene&lt;&#x2F;a&gt; has added a couple of updates and improvements:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Dynamic lights and light propagation so deeper caves are darker.&lt;&#x2F;li&gt;
 &lt;li&gt;An in-game feedback button that people can use to report bugs or
